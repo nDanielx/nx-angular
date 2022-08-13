@@ -24,7 +24,13 @@
     {
       "files": ["*.ts", "*.tsx"],
       "extends": ["plugin:@nrwl/nx/typescript"],
-      "rules": {}
+      "rules": {
+        "indent": ["warn", "tab"],
+        "linebreak-style": ["warn", "windows"],
+        "quotes": ["warn", "double"],
+        "semi": ["warn", "always"],
+        "ngx-eslint/destroy-service-provider": "error"
+      }
     },
     {
       "files": ["*.js", "*.jsx"],
