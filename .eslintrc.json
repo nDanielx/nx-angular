@@ -1,47 +1,47 @@
 {
-  "root": true,
-  "ignorePatterns": ["**/*"],
-  "plugins": ["@nrwl/nx", "rxjs-angular"],
-  "parser": "@typescript-eslint/parser",
-  "overrides": [
-    {
-      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
-      "rules": {
-        "@nrwl/nx/enforce-module-boundaries": [
-          "error",
-          {
-            "enforceBuildableLibDependency": true,
-            "allow": [],
-            "depConstraints": [
-              {
-                "sourceTag": "*",
-                "onlyDependOnLibsWithTags": ["*"]
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "files": ["*.ts", "*.tsx"],
-      "extends": ["plugin:@nrwl/nx/typescript"],
-      "rules": {
-        "indent": ["warn", "tab"],
-        "linebreak-style": ["warn", "windows"],
-        "quotes": ["warn", "single"],
-        "semi": ["warn", "always"]
-      }
-    },
-    {
-      "files": ["*.js", "*.jsx"],
-      "extends": [
-        "plugin:@nrwl/nx/javascript",
-        "plugin:@angular-eslint/ng-cli-compat",
-        "plugin:@angular-eslint/ng-cli-compat--formatting-add-on",
-        "plugin:@angular-eslint/template/process-inline-templates",
-        "plugin:rxjs/recommended"
-      ],
-      "rules": {}
-    }
-  ]
+	"root": true,
+	"ignorePatterns": ["**/*"],
+	"plugins": ["@nrwl/nx", "rxjs-angular"],
+	"parser": "@typescript-eslint/parser",
+	"overrides": [
+		{
+			"files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+			"rules": {
+				"@nrwl/nx/enforce-module-boundaries": [
+					"error",
+					{
+						"enforceBuildableLibDependency": true,
+						"allow": [],
+						"depConstraints": [
+							{
+								"sourceTag": "*",
+								"onlyDependOnLibsWithTags": ["*"]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"files": ["*.ts", "*.tsx"],
+			"extends": ["plugin:@nrwl/nx/typescript"],
+			"rules": {
+				"indent": ["warn", "tab"],
+				"linebreak-style": 0,
+				"quotes": ["warn", "single"],
+				"semi": ["warn", "always"]
+			}
+		},
+		{
+			"files": ["*.js", "*.jsx"],
+			"extends": [
+				"plugin:@nrwl/nx/javascript",
+				"plugin:@angular-eslint/ng-cli-compat",
+				"plugin:@angular-eslint/ng-cli-compat--formatting-add-on",
+				"plugin:@angular-eslint/template/process-inline-templates",
+				"plugin:rxjs/recommended"
+			],
+			"rules": {}
+		}
+	]
 }
