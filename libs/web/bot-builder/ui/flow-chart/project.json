@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/web/bot-builder/ui/flow-chart/src",
+  "prefix": "nx-base",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/web/bot-builder/ui/flow-chart"],
+      "options": {
+        "jestConfig": "libs/web/bot-builder/ui/flow-chart/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/web/bot-builder/ui/flow-chart/**/*.ts",
+          "libs/web/bot-builder/ui/flow-chart/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
