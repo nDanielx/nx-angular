@@ -3,6 +3,8 @@
   "version": 2,
   "projects": {
     "angular-nx": "apps/angular-nx",
-    "angular-nx-e2e": "apps/angular-nx-e2e"
+    "angular-nx-e2e": "apps/angular-nx-e2e",
+    "web-bot-builder-ui-flow-chart": "libs/web/bot-builder/ui/flow-chart",
+    "web-shared-ui-bot-builder-card": "libs/web/shared/ui/bot-builder-card"
   }
 }

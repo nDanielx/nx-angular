@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-base/web/bot-builder/ui/flow-chart": [
+        "libs/web/bot-builder/ui/flow-chart/src/index.ts"
+      ],
+      "@nx-base/web/shared/ui/bot-builder-card": [
+        "libs/web/shared/ui/bot-builder-card/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
